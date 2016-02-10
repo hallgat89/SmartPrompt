@@ -15,3 +15,5 @@ This is my updated bash configuration. I removed the unnecessary info from the d
 
 #Usage
 Copy and paste the text at <b>the end of your</b> .bashrc.
+
+![alt tag](https://raw.githubusercontent.com/hallgat89/Smart-Prompt-by-Hallgat/master/preview.png)
