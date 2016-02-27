@@ -25,7 +25,8 @@ function hallgat_prompt {
   
   #file counters
   ltcoun=`ls -a | wc -l`
-  if [ "$ltdir" != `pwd` ]
+  wd=`pwd`
+  if [ "$ltdir" != "$wd" ]
   then
     ltdir=`pwd`
     info="$icol$ltcoun files "
