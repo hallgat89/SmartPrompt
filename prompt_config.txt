@@ -20,6 +20,9 @@ function hallgat_prompt {
     prev=""
   fi
   
+  #git branch
+  branch=`git branch 2> /dev/null`
+  
   #command timer stop
   timer_stop 
   
@@ -79,7 +82,7 @@ function hallgat_prompt {
   
   #building PS1, PS2
   chroot="${debian_chroot:+($debian_chroot)}"
-  PS1="\${LCNT##*[\$((LCNT=1))-9]}$locc$chroot$ido:$locc\w\ $info$prev$shc>$defc " # set PS1, reset linenumber
+  PS1="\${LCNT##*[\$((LCNT=1))-9]}$locc$chroot$ido:$locc\w\ $info$prev$gitcol$branch$shc>$defc " # set PS1, reset linenumber
   PS2=" $lnnum\$((LCNT=LCNT+1))$shc>$defc " # set PS2 with linecount
 }
 
@@ -95,3 +98,4 @@ atc='\[\e[0m\]' # @ and [] color
 locc='\[\e[37m\]' #location color
 shc='\[\e[93m\]' # > color
 icol='\[\e[36m\]' # infocolor
+gitcol='\[\e[32m\]' # color of git branch
