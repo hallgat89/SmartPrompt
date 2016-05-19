@@ -9,7 +9,7 @@ This is my updated bash configuration. I removed the unnecessary info from the d
 <b>File count</b> changes (only shown when removing/adding files)<br />
 <b>Execution timer</b> (only shown when a process takes more than 3 seconds)<br />
 <b>Git branch</b> (only shown when in a Git directory)<br />
-<b>Configurable</b> colors (replace the color codes)<br />
+<b>Configurable colors</b>  (replace the color codes)<br />
 <br />
 
 <a href="http://misc.flogisoft.com/bash/tip_colors_and_formatting">For changing colors, check out this page.</a>
