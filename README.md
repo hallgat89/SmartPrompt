@@ -6,7 +6,7 @@ This is my updated bash configuration. I removed the unnecessary info from the d
 <b>Clock</b> (only shown when a minute passes)<br />
 <b>Error code</b> (only shown when the exit code is not 0)<br />
 <b>File count</b> (only shown when changing a directory, folders are files too)<br />
-<b>File count</b> (only shown when removing/adding files)<br />
+<b>File count changes</b> (only shown when removing/adding files)<br />
 <b>Execution timer</b> (only shown when a process takes more than 3 seconds)<br />
 <b>Git branch</b> (only shown when in a Git directory)<br />
 <b>Configurable colors</b>  (replace the color codes)<br />
