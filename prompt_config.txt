@@ -1,3 +1,5 @@
+############################################
+	
 #command timer start
 function timer_start {
   timer=${timer:-$SECONDS}
@@ -21,7 +23,16 @@ function hallgat_prompt {
   fi
   
   #git branch
-  branch=`git branch 2> /dev/null`
+  local branch
+  if branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null); then
+    if [[ "$branch" == "HEAD" ]]; then
+      branch='detached*'
+    fi
+    git_branch="($branch) "
+  else
+    git_branch=""
+  fi
+  
   
   #command timer stop
   timer_stop 
@@ -82,7 +93,7 @@ function hallgat_prompt {
   
   #building PS1, PS2
   chroot="${debian_chroot:+($debian_chroot)}"
-  PS1="\${LCNT##*[\$((LCNT=1))-9]}$locc$chroot$ido:$locc\w\ $info$prev$gitcol$branch$shc>$defc " # set PS1, reset linenumber
+  PS1="\${LCNT##*[\$((LCNT=1))-9]}$locc$chroot$ido:$locc\w\ $info$prev$gitcol$git_branch$shc>$defc " # set PS1, reset linenumber
   PS2=" $lnnum\$((LCNT=LCNT+1))$shc>$defc " # set PS2 with linecount
 }
 
