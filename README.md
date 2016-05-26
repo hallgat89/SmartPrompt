@@ -1,5 +1,8 @@
 # Smart-Prompt-by-Hallgat
 A modification of the default prompt to show extra functionality<br />
+
+![alt tag](https://raw.githubusercontent.com/hallgat89/Smart-Prompt-by-Hallgat/master/preview.png)
+
 <br />
 This is my updated bash configuration. I removed the unnecessary info from the default bash and added the following features:<br />
 
@@ -16,5 +19,3 @@ This is my updated bash configuration. I removed the unnecessary info from the d
 
 #Usage
 Copy and paste the text at <b>the end of your</b> .bashrc.
-
-![alt tag](https://raw.githubusercontent.com/hallgat89/Smart-Prompt-by-Hallgat/master/preview.png)
