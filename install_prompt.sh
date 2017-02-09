@@ -5,7 +5,6 @@ RNDTOKEN='eet3hee1bei4oavie5Eeceew15i9emumu'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 FILENAME='prompt_config.txt'
 FULLPATH=`readlink -f $DIR/$FILENAME`
-
 TOKENEXISTS=`cat ~/.bashrc | grep "$RNDTOKEN" | wc -l`
 
 if [ "$TOKENEXISTS" -eq "0" ]
@@ -16,5 +15,4 @@ else
 	echo "Smart prompt already installed"
 	exit 1
 fi
-
 exit 0
