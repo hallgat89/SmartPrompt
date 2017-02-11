@@ -18,4 +18,4 @@ This is my updated bash configuration. I removed the unnecessary info from the d
 <a href="http://misc.flogisoft.com/bash/tip_colors_and_formatting">For changing colors, check out this page.</a>
 
 #Usage
-Copy and paste the text at <b>the end of your</b> .bashrc.
+Copy and paste the text at <b>the end of your</b> .bashr, or run the install script.
